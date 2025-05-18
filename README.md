@@ -27,12 +27,12 @@ Save outputs to specified output files
 📦 Requirements
 Some features require optional packages:
 
-bash
+
 
 
 pip install chardet pyzmq base91
 🚀 Usage
-bash
+
 
 
 python DENCODER.py -codec <codec> <encode|decode> <text|-f files> [-output outputs]
@@ -48,30 +48,30 @@ Flag	Description
 
 🧪 Examples
 🔤 Encode & Decode Strings
-bash
 
 
-python DENCODER.py -codec ascii encode "Hello"
-python DENCODER.py -codec base64 decode "SGVsbG8="
+
+-python DENCODER.py -codec ascii encode "Hello"
+-python DENCODER.py -codec base64 decode "SGVsbG8="
 📝 Encode/Decode Files
-bash
 
 
-python DENCODER.py -codec utf-16 encode -f input.txt -output out.txt
-python DENCODER.py -codec base58 decode -f encoded1.txt,encoded2.txt -output decoded1.txt,decoded2.txt
+
+-python DENCODER.py -codec utf-16 encode -f input.txt -output out.txt
+-python DENCODER.py -codec base58 decode -f encoded1.txt,encoded2.txt -output decoded1.txt,decoded2.txt
 🔍 Identify File Encoding
-bash
 
 
-python DENCODER.py -identify -f unknown.txt
+
+-python DENCODER.py -identify -f unknown.txt
 🧠 Auto Decode Text or Files
-bash
 
 
-python DENCODER.py -auto "SGVsbG8gd29ybGQh"
-python DENCODER.py -auto -f mysterious.txt
+
+-python DENCODER.py -auto "SGVsbG8gd29ybGQh"
+-python DENCODER.py -auto -f mysterious.txt
 🧬 Supported Codecs
-bash
+
 
 
 ascii, utf-8, utf-16, utf-32, latin-1, windows-1252, shift_jis, big5, ebcdic
